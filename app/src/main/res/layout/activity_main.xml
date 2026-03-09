@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0F0F"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text="0"
+        android:textSize="48sp"
+        android:textColor="#FFFFFF"
+        android:gravity="end|center_vertical"
+        android:padding="20dp"
+        android:background="#1B1B1B"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <GridLayout
+        android:id="@+id/gridCalculadora"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="6"
+        android:padding="8dp"
+        android:useDefaultMargins="true"
+
+        app:layout_constraintTop_toBottomOf="@id/txtDisplay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <Button
+            android:id="@+id/btnSin"
+            android:text="sin"
+            style="@style/btnCientifico"/>
+
+        <Button
+            android:id="@+id/btnCos"
+            android:text="cos"
+            style="@style/btnCientifico"/>
+
+        <Button
+            android:id="@+id/btnTan"
+            android:text="tan"
+            style="@style/btnCientifico"/>
+
+        <Button
+            android:id="@+id/btnLog"
+            android:text="log"
+            style="@style/btnCientifico"/>
+
+
+        <Button
+            android:id="@+id/btnPower"
+            android:text="xʸ"
+            style="@style/btnCientifico"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:text="C"
+            style="@style/btnOperador"/>
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:text="/"
+            style="@style/btnOperador"/>
+
+        <Button
+            android:id="@+id/btnMult"
+            android:text="*"
+            style="@style/btnOperador"/>
+
+
+        <Button
+            android:id="@+id/btn7"
+            android:text="7"
+            style="@style/btnNumero"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:text="8"
+            style="@style/btnNumero"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:text="9"
+            style="@style/btnNumero"/>
+
+        <Button
+            android:id="@+id/btnSub"
+            android:text="-"
+            style="@style/btnOperador"/>
+
+
+        <Button
+            android:id="@+id/btn4"
+            android:text="4"
+            style="@style/btnNumero"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="5"
+            style="@style/btnNumero"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="6"
+            style="@style/btnNumero"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:text="+"
+            style="@style/btnOperador"/>
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="1"
+            style="@style/btnNumero"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="2"
+            style="@style/btnNumero"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="3"
+            style="@style/btnNumero"/>
+
+        <Button
+            android:id="@+id/btnEqual"
+            android:text="="
+            style="@style/btnIgual"/>
+
+
+        <Button
+            android:id="@+id/btn0"
+            android:text="0"
+            style="@style/btnNumero"/>
+
+        <Button
+            android:id="@+id/btnDot"
+            android:text="."
+            style="@style/btnNumero"/>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
